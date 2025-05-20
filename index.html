@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Runeterra Clone</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="logo">Runeterra</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#download">Download</a></li>
+    </ul>
+  </nav>
 
+  <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+  <section class="hero">
+    <video autoplay muted loop id="bg-video">
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-content">
+      <h1>Forge Your Legends</h1>
+      <p>Step into the world of Runeterra and shape your destiny.</p>
+      <a href="#download" class="btn-primary">Play Now</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <h2>About the Game</h2>
+    <p>Legends of Runeterra is a strategy card game from the creators of League of Legends. Skill, creativity, and cleverness determine your success.</p>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3>Iconic Champions</h3>
+      <p>Build decks with champions from League of Legends and unlock new abilities.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Strategic Gameplay</h3>
+      <p>Outsmart your opponent with tactical moves and powerful combos.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Expansive World</h3>
+      <p>Explore diverse regions and uncover stories from across Runeterra.</p>
+    </div>
+  </section>
+
+  <!-- NEWS SECTION -->
+  <section id="news" class="news">
+    <h2>Latest News</h2>
+    <div class="news-item">
+      <h3>New Expansion Released</h3>
+      <p>Discover new cards and champions in the latest expansion "Dark Horizons".</p>
+    </div>
+    <div class="news-item">
+      <h3>Seasonal Tournament</h3>
+      <p>Join the competitive ladder and earn rewards in the upcoming seasonal cup.</p>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD SECTION -->
+  <section id="download" class="download">
+    <h2>Download Now</h2>
+    <a href="#" class="btn-primary">Get the Game</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Legends of Runeterra Clone. Made for educational purposes.
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 100);
+    });
+  </script>
 </body>
 </html>
