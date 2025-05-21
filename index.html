@@ -1,119 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Runeterra Clone</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- NAVBAR -->
-  <nav id="navbar">
-    <div class="logo">Runeterra</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#download">Download</a></li>
-    </ul>
-  </nav>
+  <head>
+    <title>TOTO GAMES</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="logo">TOTO GAMES</div>
+        <ul class="nav-left">
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+           <ul class="nav-right">
+          <li class="dropdown">
+            <a href="#"
+              ><i class="fas fa-bars"></i> <span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="Nav-Panel/navigation.html">Contact Us</a></li>
+              <li><a href="Nav-Panel/navigation.html">Support</a></li>
+              <li><a href="Nav-Panel/navigation.html">Community</a></li>
+              <li><a href="Nav-Panel/navigation.html">Games</a></li>
+              <li><a href="Nav-Panel/navigation.html">Products</a></li>
+            </ul>
+          </li>
+          <li><a href="Nav-Panel/navigation.html">SIGN IN</a></li>
+        </ul>
+           </ul>
+      </nav>
+    </header>
 
-  <!-- HERO SECTION WITH VIDEO BACKGROUND -->
-  <section class="hero">
-    <video autoplay muted loop id="bg-video">
-      <source src="video.mp4" type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
-    <div class="hero-content">
-      <h1>Forge Your Legends</h1>
-      <p>Step into the world of Runeterra and shape your destiny.</p>
-      <a href="#download" class="btn-primary">Play Now</a>
-    </div>
-  </section>
+<section class="hero">
+  <div class="banner-container">
+    <img src="images/main-bg.jpg" id="main-banner" />
+  </div>
+  <div class="hero-content">
+    <p class="forge-line">Draw. Play. Dominate.</p>
+    <p>Outwit your enemies in the game that decides empires.</p>
+    <button class="banner-button">Download</button>
+  </div>
+</section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about">
-    <h2>About the Game</h2>
-    <p>Legends of Runeterra is a strategy card game from the creators of League of Legends. Skill, creativity, and cleverness determine your success.</p>
-  </section>
+    <section id="about" class="about">
+      <h2>About the Game</h2>
+      <p>
+        Legends of Runeterra is a strategy card game from the creators of League
+        of Legends. Skill, creativity, and cleverness determine your success.
+      </p>
+    </section>
 
-  <!-- FEATURES SECTION -->
-  <section id="features" class="features">
-    <div class="feature-card">
-      <h3>Iconic Champions</h3>
-      <p>Build decks with champions from League of Legends and unlock new abilities.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Strategic Gameplay</h3>
-      <p>Outsmart your opponent with tactical moves and powerful combos.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Expansive World</h3>
-      <p>Explore diverse regions and uncover stories from across Runeterra.</p>
-    </div>
-  </section>
+    <section id="features" class="features">
+      <div class="feature-card">
+        <h3>Iconic Champions</h3>
+        <p>
+          Build decks with champions from League of Legends and unlock new
+          abilities.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Strategic Gameplay</h3>
+        <p>Outsmart your opponent with tactical moves and powerful combos.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Expansive World</h3>
+        <p>
+          Explore diverse regions and uncover stories from across Runeterra.
+        </p>
+      </div>
+    </section>
 
-  <!-- NEWS SECTION -->
-  <section id="news" class="news">
-    <h2>Latest News</h2>
-    <div class="news-item">
-      <h3>New Expansion Released</h3>
-      <p>Discover new cards and champions in the latest expansion "Dark Horizons".</p>
-    </div>
-    <div class="news-item">
-      <h3>Seasonal Tournament</h3>
-      <p>Join the competitive ladder and earn rewards in the upcoming seasonal cup.</p>
-    </div>
-  </section>
+    <section id="news" class="news">
+      <h2>Latest News</h2>
+      <div class="news-item">
+        <h3>New Expansion Released</h3>
+        <p>
+          Discover new cards and champions in the latest expansion "Dark
+          Horizons".
+        </p>
+      </div>
+      <div class="news-item">
+        <h3>Seasonal Tournament</h3>
+        <p>
+          Join the competitive ladder and earn rewards in the upcoming seasonal
+          cup.
+        </p>
+      </div>
+    </section>
 
-  <!-- DOWNLOAD SECTION -->
-  <section id="download" class="download">
-    <h2>Download Now</h2>
-    <a href="#" class="btn-primary">Get the Game</a>
-  </section>
+    <section id="download" class="download">
+      <h2>Download Now</h2>
+      <a href="#" class="btn-primary">Get the Game</a>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    &copy; 2025 Legends of Runeterra Clone. Made for educational purposes.
-  </footer>
+    <footer>
+      &copy; 2025 Legends of Runeterra Clone. Made for educational purposes.
+    </footer>
 
-  <script>
-    window.addEventListener('scroll', () => {
-      const nav = document.getElementById('navbar');
-      nav.classList.toggle('scrolled', window.scrollY > 100);
-    });
-  </script>
-</body>
-=======
-    <head>
-        <title>TOTO GAMES</title>
-    </head>
-
-    <body>
-        <header>
-            <div class="header-container">
-                <h1>TOTO GAMES</h1>
-                <h3>Contact Us</h3>
-                <h3>Community</h3>
-                <h3>News</h3>
-                <h3>Games</h3>
-                <h3>Products</h3>
-                <h3>SIGN IN</h3>
-                <h3>PLAY NOW</h3>
-            </div>
-        </header>
-
-        <div class="text-beside-video">
-            <h2>LOREM IPSUM DOLOR</h2>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis, et. Perferendis, corrupti, totam officia, eius optio
-            minima cumque at facere quidem fuga nostrum adipisci eveniet labore
-            incidunt voluptates itaque enim!
-          </p>
-        </div>
-    <h2>Lorem ipsum dolor sit amet consectetur...</h2>
-    </body>
->>>>>>> 97ed0517b19095e7a16ab12790dd58d500720e55
+    <script>
+      window.addEventListener("scroll", () => {
+        const nav = document.getElementById("navbar");
+        nav.classList.toggle("scrolled", window.scrollY > 100);
+      });
+    </script>
+  </body>
 </html>
