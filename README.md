@@ -1,0 +1,6 @@
+--FEATURES--
+- Interactive dropdown menu
+- Navigation bar buttons scroll to sections or redirect to other pages
+- Download button changes color on hover
+- Featured cards highlight on hover
+- Responsive design (for screens with 748px width or less)
