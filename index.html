@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Runeterra Clone</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
   <!-- NAVBAR -->
   <nav id="navbar">
     <div class="logo">Runeterra</div>
+    <button class="mobile-menu-toggle">☰</button>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#features">Features</a></li>
@@ -19,16 +20,32 @@
     </ul>
   </nav>
 
-  <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+  <!-- HERO SECTION -->
   <section class="hero">
-    <video autoplay muted loop id="bg-video">
-      <source src="video.mp4" type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source src="assets/videos/main-background.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
     <div class="hero-content">
       <h1>Forge Your Legends</h1>
       <p>Step into the world of Runeterra and shape your destiny.</p>
       <a href="#download" class="btn-primary">Play Now</a>
+    </div>
+  </section>
+
+  <!-- CHAMPIONS SHOWCASE -->
+  <section class="champions-showcase">
+    <div class="champions-background"></div>
+    <h2>Choose Your Champion</h2>
+    <div class="champions-grid">
+      <img src="assets/images/champion1.png" alt="Yasuo">
+      <img src="assets/images/champion2.png" alt="Lux">
+      <img src="assets/images/champion3.png" alt="Darius">
+      <img src="assets/images/champion4.png" alt="Ahri">
+      <img src="assets/images/champion5.png" alt="Garen">
+      <img src="assets/images/champion6.png" alt="Zed">
     </div>
   </section>
 
@@ -40,30 +57,35 @@
 
   <!-- FEATURES SECTION -->
   <section id="features" class="features">
-    <div class="feature-card">
-      <h3>Iconic Champions</h3>
-      <p>Build decks with champions from League of Legends and unlock new abilities.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Strategic Gameplay</h3>
-      <p>Outsmart your opponent with tactical moves and powerful combos.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Expansive World</h3>
-      <p>Explore diverse regions and uncover stories from across Runeterra.</p>
+    <h2>Game Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Iconic Champions</h3>
+        <p>Build decks with champions from League of Legends and unlock new abilities.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Strategic Gameplay</h3>
+        <p>Outsmart your opponent with tactical moves and powerful combos.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Expansive World</h3>
+        <p>Explore diverse regions and uncover stories from across Runeterra.</p>
+      </div>
     </div>
   </section>
 
   <!-- NEWS SECTION -->
   <section id="news" class="news">
     <h2>Latest News</h2>
-    <div class="news-item">
-      <h3>New Expansion Released</h3>
-      <p>Discover new cards and champions in the latest expansion "Dark Horizons".</p>
-    </div>
-    <div class="news-item">
-      <h3>Seasonal Tournament</h3>
-      <p>Join the competitive ladder and earn rewards in the upcoming seasonal cup.</p>
+    <div class="news-grid">
+      <div class="news-card">
+        <h3>New Expansion Released</h3>
+        <p>Discover new cards and champions in the latest expansion "Dark Horizons".</p>
+      </div>
+      <div class="news-card">
+        <h3>Seasonal Tournament</h3>
+        <p>Join the competitive ladder and earn rewards in the upcoming seasonal cup.</p>
+      </div>
     </div>
   </section>
 
@@ -79,41 +101,53 @@
   </footer>
 
   <script>
+    // Navbar scroll effect
     window.addEventListener('scroll', () => {
       const nav = document.getElementById('navbar');
-      nav.classList.toggle('scrolled', window.scrollY > 100);
+      if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    
+    if (mobileMenuToggle && navMenu) {
+      mobileMenuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        mobileMenuToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+      });
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          if (navMenu) navMenu.classList.remove('active');
+          if (mobileMenuToggle) mobileMenuToggle.textContent = '☰';
+        }
+      });
+    });
+
+    // Champion hover effects
+    document.querySelectorAll('.champions-grid img').forEach(champion => {
+      const bg = document.querySelector('.champions-background');
+      const originalTitle = document.querySelector('.champions-showcase h2').textContent;
+      
+      champion.addEventListener('mouseenter', () => {
+        const champName = champion.alt.toLowerCase().replace(' ', '-');
+        bg.style.backgroundImage = `url(assets/images/champions/${champName}-full.webp)`;
+        bg.style.opacity = '1';
+        document.querySelector('.champions-showcase h2').textContent = `Selected: ${champion.alt}`;
+      });
+      
+      champion.addEventListener('mouseleave', () => {
+        bg.style.opacity = '0';
+        document.querySelector('.champions-showcase h2').textContent = originalTitle;
+      });
     });
   </script>
 </body>
-=======
-    <head>
-        <title>TOTO GAMES</title>
-    </head>
-
-    <body>
-        <header>
-            <div class="header-container">
-                <h1>TOTO GAMES</h1>
-                <h3>Contact Us</h3>
-                <h3>Community</h3>
-                <h3>News</h3>
-                <h3>Games</h3>
-                <h3>Products</h3>
-                <h3>SIGN IN</h3>
-                <h3>PLAY NOW</h3>
-            </div>
-        </header>
-
-        <div class="text-beside-video">
-            <h2>LOREM IPSUM DOLOR</h2>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis, et. Perferendis, corrupti, totam officia, eius optio
-            minima cumque at facere quidem fuga nostrum adipisci eveniet labore
-            incidunt voluptates itaque enim!
-          </p>
-        </div>
-    <h2>Lorem ipsum dolor sit amet consectetur...</h2>
-    </body>
->>>>>>> 97ed0517b19095e7a16ab12790dd58d500720e55
 </html>
