@@ -43,37 +43,54 @@
   <div class="hero-content">
     <p class="forge-line">Draw. Play. Dominate.</p>
     <p>Outwit your enemies in the game that decides empires.</p>
-    <button class="banner-button">Download</button>
+<button class="banner-button" onclick="window.location.href='Nav-Panel/navigation.html'">Download</button>
   </div>
 </section>
+    <main>
+      <div class="content-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/QE6V8NgKLEQ?si=tuPKVyPNNHVWNoaE"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="text-beside-video">
+          <h2>STRATEGY MEETS SKILLS</h2>
+          <p>
+            Command powerful factions, unleash devastating combos, and outplay your opponents in this strategic, story-rich card game. With stunning visuals, tactical depth, and no reliance on luck, every round is a test of wit and will.
+          </p>
+        </div>
+      </div>
+    </main>
 
     <section id="about" class="about">
-      <h2>About the Game</h2>
+      <h2>ABOUT THE GAME</h2>
       <p>
-        Legends of Runeterra is a strategy card game from the creators of League
-        of Legends. Skill, creativity, and cleverness determine your success.
+        Gwent: The Witcher Card Game is a fast-paced strategy card game set in the dark, gritty world of The Witcher. Build powerful decks from distinct factions, each with unique abilities and playstyles. Outsmart your opponents with careful planning, bold bluffs, and clever combos. Easy to learn but full of depth, Gwent rewards skill, not luck.
       </p>
     </section>
 
-    <section id="features" class="features">
-      <div class="feature-card">
-        <h3>Iconic Champions</h3>
-        <p>
-          Build decks with champions from League of Legends and unlock new
-          abilities.
-        </p>
-      </div>
-      <div class="feature-card">
-        <h3>Strategic Gameplay</h3>
-        <p>Outsmart your opponent with tactical moves and powerful combos.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Expansive World</h3>
-        <p>
-          Explore diverse regions and uncover stories from across Runeterra.
-        </p>
-      </div>
-    </section>
+ <section id="features" class="features">
+  <div class="feature-card card-1">
+    <div class="feature-text">
+      <h3>Unique Factions</h3>
+      <p>Choose from distinct factions like Nilfgaard or Skellige, each with its own identity, mechanics, and synergies.</p>
+    </div>
+  </div>
+  <div class="feature-card card-2">
+    <div class="feature-text">
+      <h3>Strategic Gameplay</h3>
+      <p>Outsmart your opponent with tactical moves and powerful combos.</p>
+    </div>
+  </div>
+  <div class="feature-card card-3">
+    <div class="feature-text">
+      <h3>Two-Round Strategy</h3>
+      <p>Win two out of three rounds using careful planning—sometimes passing early is the smartest move.</p>
+    </div>
+  </div>
+</section>
 
     <section id="news" class="news">
       <h2>Latest News</h2>
@@ -102,11 +119,14 @@
       &copy; 2025 Legends of Runeterra Clone. Made for educational purposes.
     </footer>
 
+
+</div>
     <script>
       window.addEventListener("scroll", () => {
         const nav = document.getElementById("navbar");
         nav.classList.toggle("scrolled", window.scrollY > 100);
       });
     </script>
+    
   </body>
 </html>

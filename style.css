@@ -14,9 +14,9 @@ header {
 }
 
 body {
+  background-color: #090909;
   font-family: "Poppins", sans-serif;
-  background: #0b0b0b;
-  color: #eee;
+  color: #ffffff;
   line-height: 1.6;
 }
 
@@ -165,21 +165,36 @@ nav ul li.dropdown:hover .dropdown-menu {
   left: 0;
   width: 100%;
   height: 150px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #090909 50%
+  );
   z-index: 0;
   pointer-events: none;
 }
 
 .hero-content {
   z-index: 1;
-  max-width: 700px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10rem;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.8) 28%,
+    rgba(0, 0, 0, 0.2) 55%,
+    rgba(0, 0, 0, 0) 109%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-left: -88px;
   margin-top: -60px;
   margin-bottom: -130px;
-  border-radius: 0;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
@@ -194,7 +209,7 @@ nav ul li.dropdown:hover .dropdown-menu {
   font-family: "Cinzel Decorative", serif;
   font-size: 3rem;
   font-weight: 600;
-  color: #ffeaa7; /* soft but striking */
+  color: #ffeaa7;
   text-shadow: 0 0 5px #000, 1px 1px 10px #000;
   text-transform: uppercase;
   margin-top: 1rem;
@@ -231,40 +246,130 @@ nav ul li.dropdown:hover .dropdown-menu {
   border-color: #ffeb99;
 }
 
-.about {
-  padding: 5rem 10%;
-  background: #111;
+main {
+  position: relative;
+  z-index: 2;
+  margin-top: 70px;
+  margin-left: 8px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+iframe {
+  width: 839px;
+  height: 470px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 40px;
+  gap: 125px;
+}
+
+.text-beside-video {
+  margin-top: 55px;
+  max-width: 400px;
+  margin-left: -20px;
+  color: #737373;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-beside-video h2 {
+  font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f7d56f;
+}
+
+.text-beside-video p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  margin-bottom: 70px;
+  margin-top: 95px;
+  color: #9b9a9a;
   text-align: center;
 }
 
+.about {
+  padding: 5rem 10%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
 .about h2 {
-  color: #ffc800;
+  font-family: "Cinzel", serif;
+  color: #f7d56f;
+  text-shadow: 2px 2px 5px #000;
   margin-bottom: 1rem;
+  font-size: 2.3rem;
+  text-align: center;
 }
 
 .about p {
-  color: #ccc;
+  color: #737373;
   max-width: 800px;
   margin: 0 auto;
+  font-size: 1.5rem;
+  max-width: 1000px;
 }
 
 .features {
   padding: 5rem 10%;
-  background: #111;
   display: flex;
   justify-content: space-around;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
+.card-1 {
+  background-image: url("/images/card3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-2 {
+  background-image: url("/images/card2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-3 {
+  background-image: url("/images/card1.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .feature-card {
-  background: #1a1a1a;
+  height: 590px;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 0;
   max-width: 300px;
   flex: 1;
   box-shadow: 0 0 15px rgba(255, 200, 0, 0.3);
   transition: transform 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.feature-text {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #090909 50%
+  );
+  padding: 1.5rem;
+  border-radius: 0 0 10px 10px;
 }
 
 .feature-card:hover {
@@ -273,17 +378,19 @@ nav ul li.dropdown:hover .dropdown-menu {
 }
 
 .feature-card h3 {
-  color: #ffc800;
-  margin-bottom: 1rem;
+  font-family: "Cinzel", serif;
+  color: #f7d56f;
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
 }
 
 .feature-card p {
   color: #ccc;
+  font-family: "Open Sans", sans-serif;
 }
 
 .news {
   padding: 5rem 10%;
-  background: #0e0e0e;
   text-align: center;
 }
 
