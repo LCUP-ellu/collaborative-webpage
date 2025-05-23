@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TOTO GAMES</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>TOTO GAMES</h1>
+                <h3>Contact Us</h3>
+                <h3>Community</h3>
+                <h3>News</h3>
+                <h3>Games</h3>
+                <h3>Products</h3>
+                <h3>SIGN IN</h3>
+                <h3>PLAY NOW</h3>
+            </div>
+        </header>
+
+    <div class="banner-container">
+      <img src="images/main-bg.jpg" id="main-banner" />
+      <!--BUTTON-->
+      <div class="banner-button-wrapper">
+        <button class="banner-button">Download</button>
+      </div>
+    </div>
+
+    <main>
+      <div class="content-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/QE6V8NgKLEQ?si=tuPKVyPNNHVWNoaE"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="text-beside-video">
+          <h2>LOREM IPSUM DOLOR</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, et. Perferendis, corrupti, totam officia, eius optio
+            minima cumque at facere quidem fuga nostrum adipisci eveniet labore
+            incidunt voluptates itaque enim!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <h2>Lorem ipsum dolor sit amet consectetur...</h2>
+  </body>
+</html>
